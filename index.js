@@ -20,7 +20,12 @@ module.exports = function (content) {
     }
 
     const compiled = compiler.compile(result.data, { preserveWhitespace: false });
-    let component = `render: function () {${compiled.render}}`;
+    let render = compiled.render
+
+    render = render.replace('with(this){','')
+    render = render.slice(0,-1)
+    render = render.replace(new RegExp('_c', 'g'), 'this._c')
+    let component = `render: function () {${render}}`;
 
     if (options.includePath || query.includePath) {
       const filename = loaderUtils.interpolateName(this, '[path][name].[ext]', { context: this.options.context });
