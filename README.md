@@ -1,3 +1,4 @@
+[![Board Status](https://wearegofer.visualstudio.com/31a1bf06-3376-46ee-ac67-aa1ceb7ef94a/664608b3-222d-42c6-9fe9-07061fbb17f8/_apis/work/boardbadge/7915f9e4-2df4-4960-8ef9-b720491f84ff)](https://wearegofer.visualstudio.com/31a1bf06-3376-46ee-ac67-aa1ceb7ef94a/_boards/board/t/664608b3-222d-42c6-9fe9-07061fbb17f8/Microsoft.RequirementCategory)
 # vue-svg-loader <img src="https://img.shields.io/npm/dt/vue-svg-loader.svg">
 A webpack loader that allows to use SVG files as Vue Components.
 
